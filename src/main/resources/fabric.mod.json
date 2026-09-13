@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "fantasy_debug",
+  "version": "${version}",
+  "name": "Fantasy: Debug",
+  "description": "高性能开发调试工具：按 0 键弹出独立外部 Java 诊断窗口（非游戏内 UI），用于在主世界 tick 卡死时捕获 JVM/线程/内存/维度/实体等关键数据，替代手动捕获。",
+  "authors": [
+    "lively-Studio"
+  ],
+  "contact": {
+    "homepage": "https://github.com/lively-Studio/Fantasy-Debug",
+    "sources": "https://github.com/lively-Studio/Fantasy-Debug"
+  },
+  "license": "GPL-3.0",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.fantasy.debug.FantasyDebug"
+    ],
+    "client": [
+      "com.fantasy.debug.client.FantasyDebugClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

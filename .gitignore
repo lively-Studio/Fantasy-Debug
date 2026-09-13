@@ -1,0 +1,28 @@
+# Gradle
+.gradle/
+build/
+out/
+classes/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+
+# macOS
+.DS_Store
+
+# Fabric
+run/
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+
+# 临时日志/崩溃报告
+latest.log
+crash-*.txt
