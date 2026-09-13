@@ -112,8 +112,7 @@ public final class WorldProbe {
         String owner = "?";
 
         // 反射探测驯服状态
-        Field[] fields = collectFields(e.getClass());
-        for (Field f : fields) {
+        for (Field f : collectFields(e.getClass())) {
             String fieldName = f.getName().toLowerCase();
             if (matches(fieldName, TAMED_FIELDS)) {
                 tamed = readField(e, f);
