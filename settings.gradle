@@ -35,3 +35,9 @@ if (!isCi) {
 }
 
 rootProject.name = 'fantasy-debug'
+
+// 多版本工程：每个 MC 版本一个子工程，源码目录在 versions/ 下
+// 共享源码放在 common/，由两个版本工程一起编译。
+include 'fabric-1.21.x', 'fabric-26.x'
+project(':fabric-1.21.x').projectDir = file('versions/fabric-1.21.x')
+project(':fabric-26.x').projectDir = file('versions/fabric-26.x')
